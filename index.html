@@ -9,51 +9,60 @@
     <header id="site-header">
         <nav>
             <!-- NAVIGATION -->
-            <ul id="navigation" class="horizonatal-list">
-                <li id="home">
-                    <a href="#site-header"> Home</a>
+            <ul id="navigation" class="horizonatal-list text-align-center text-style-header">
+                <li>
+                    <a href="#site-header" class="text-style-header"> Home</a>
                 </li>
-                <li id="about">
-                    <a href="#about">About</a>
+                <li>
+                    <a href="#about" class="text-style-header">About</a>
                 </li>
-                <li id="skills">
-                    <a href="#skills">Skills</a>
+                <li>
+                    <a href="#skills" class="text-style-header">Skills</a>
 
                 </li>
-                <li id="experience">
-                    <a href="#experience">Experience</a>
+                <li >
+                    <a href="#experience" class="text-style-header">Experience</a>
 
                 </li>
-                <li id="education">
-                    <a href="#education">Education</a>
+                <li >
+                    <a href="#education" class="text-style-header">Education</a>
 
                 </li>
-                <li id="projects">
-                    <a href="#projects">Projects</a>
+                <li>
+                    <a href="#projects" class="text-style-header">Projects</a>
 
                 </li>
-                <li id="contact">
-                    <a href="#contact">Contact</a>
+                <li>
+                    <a href="#contact" class="text-style-header">Contact</a>
 
                 </li>
 
             </ul>
         </nav>
-        <!-- HEADER IMAGE AND DISPLAY PICTURE -->
+        <!--NAME AND SOCIAL MEDIA -->
+        <section id="name" class="text-align-center">
+            <h1 class="text-style-header">Shravya Gade</h1>
+        </section>
+        <section id="social-section">
         
-        <ul id="social">
+        <ul id="social" class="horizonatal-list text-align-center">
             <li id="linkedin">
-                <a href=""><img src="" alt=""></a>
+                <a href="https://www.linkedin.com/in/krishna-shravya-gade/" target="_blank"><img src="static/linkedin-brands.svg" alt="linkedin profile" class="filter-green"></a>
             </li>
-            <li id="email">
-                <a href=""><img src="" alt=""></a>
+            <li id="email" class="text-align-center">
+                <a href="gade0030@umn.edu" target="_blank"><img src="static/envelope-square-solid.svg" alt="email address"></a>
             </li>
             <li id="github">
-                <a href=""><img src="" alt=""></a>
+                <a href="https://github.com/shravya-95"><img src="static/github-square-brands.svg" alt="github profile"></a>
             </li>
-        </ul>        
+        </ul>     
+        </section>   
     </header>
     <main>
+        <!-- DISPLAY PICTURE -->
+        <div id="display-picture" class="text-align-center">
+            <img src="static/animoji.jpeg" alt="display picture" >
+        </div>
         <!-- CONTENT
             1.Short intro
             2.Skills
@@ -62,21 +71,59 @@
             5.Projects 
             6.Contact-->
         <section id="about">
+            <p class="text-style text-align-center">
+                Hi! I am Shravya and this is my portfolio. 
+            </p>
 
         </section>
         <section id="skills">
+            <div id="skills-section">
+                <div id="skills-title" class="text-align-center section-title">
+                    <img id="skills-icon" src="static/cogs-solid.svg" class="title-icon"><h1 class="text-style"> Skills</h1>
+                </div>
+                <div id="skill-blobs">
+                    <div class="skill-blob">Python</div>
+                    <div class="skill-blob">C++</div>
+                    <div class="skill-blob">Virtualization</div>
+                    <div class="skill-blob">Networks</div>
+                    <div class="skill-blob">SQL</div>
+                    <div class="skill-blob">Cassandra</div>
+                    <div class="skill-blob">Spark</div>
+                    <div class="skill-blob">Java</div>
+                    <div class="skill-blob">Hadoop</div>
+                
+            </div>
+                
+
+            </div>
             
         </section>
         <section id="experience">
+            <div id="experience-section">
+                <div id="experience-title" class="text-align-center section-title">
+                    <img id="experience-icon" src="static/briefcase-solid.svg" class="title-icon"><h1 class="text-style"> Experience</h1>
+                </div>
             
         </section>
         <section id="education">
+            <div id="education-section">
+                <div id="education-title" class="text-align-center section-title">
+                    <img id="education-icon" src="static/book-solid.svg" class="title-icon"><h1 class="text-style"> Education</h1>
+                </div>
             
         </section>
         <section id="projects">
+            <div id="projects-section">
+                <div id="projects-title" class="text-align-center section-title">
+                    <img id="projects-icon" src="static/folder-open-solid.svg" class="title-icon"><h1 class="text-style"> Projects</h1>
+                </div>
             
         </section>
         <section id="contact">
+            <div id="contact-section">
+                <div id="contact-title" class="text-align-center section-title">
+                    <img id="contact-icon" src="static/address-card-solid.svg" class="title-icon"><h1 class="text-style"> Contact Me</h1>
+                </div>
             
         </section>
     </main>

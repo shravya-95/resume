@@ -1,6 +1,22 @@
 body{
     margin: 0px;
 }
+/* TEXT STYLE */
+.text-style{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: slategrey
+}
+.text-align-center{
+    text-align: center;
+    
+}
+.text-style-header{
+    font-family: sans-serif;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 2px;
+}
+/* HEADER  */
 #site-header {
     background-image: url("golden_gopher_1.jpg");
     background-size: cover;
@@ -10,21 +26,114 @@ body{
     background-position: center;
     opacity: 0.7;
 }
+/* HORIZONTAL LIST */
+.horizontal-list {
+    list-style: none;
+    padding-left: 0px;
+}
 .horizonatal-list li{
-    display: inline;
-    margin: 10px;
+    display: inline-block;
+    margin: 0px 10px 0px 10px;
     padding:0;
     
-}
-nav{
-    text-align: center;
     
 }
-nav ul li a {
-    font-family: sans-serif;
-    text-transform: uppercase;
-    color: white;
+/* NAVIGATION */
+#navigation{
+    margin-top: 0px;
+}
+#navigation.horizonatal-list li a{
     text-decoration: none;
     font-size: small;
-    letter-spacing: 2px;
+    transition: color 0.5s, border-bottom 0.1s;
+}
+#navigation.horizonatal-list li a:hover{
+    color: bisque;
+    border-bottom: 1px solid bisque;
+}
+/* NAME */
+#name{
+    margin: 50px;
+}
+
+#name h1{
+    font-size: 50px;
+    text-transform: capitalize;
+    
+
+}
+
+/* SOCIAL */
+#social li a img{
+    /* padding:10px; */
+    margin: 10px;
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    border-radius: 10%;
+    transition: 0.3s;
+}
+
+#social li a img:hover{
+    box-shadow: 0px 0px 6px 4px rgba(255,255, 255, 0.4);
+}
+/* DISPLAY PICTURE */
+#display-picture img{
+    width: auto;
+    height: 250px;
+    border-radius: 60%;
+    margin-top: -100px;
+    position: relative;
+    border: snow;
+    box-shadow: 0px 0px 2px 1px #b9b2bd;
+    text-align: center;
+}
+/* MAIN CONTENT */
+main section:nth-child(2n+1){
+    background-color: lavender;
+}
+main section:nth-child(2n){
+    background-color: white;
+}
+/* SKILLS */
+main section{
+    margin: auto;
+    padding: 20px;
+}
+.section-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.section-title h1{
+    display: inline-block;
+    margin-left: 10px;
+    /* padding: 10px; */
+    
+}
+.title-icon{
+    width: auto;
+    height: 25px;
+}
+#skills-section{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: auto;
+}
+#skill-blobs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+.skill-blob{
+    border: 2px solid darkgray;
+    padding: 5px;
+    border-radius: 10%;
+    width: 100px;
+    text-align: center;
+    margin: 10px;
 }
