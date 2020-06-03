@@ -12,9 +12,13 @@ body{
 }
 .text-style-header{
     font-family: sans-serif;
-    text-transform: uppercase;
     color: white;
     letter-spacing: 2px;
+}
+.text-style-subheader{
+    font-family: sans-serif;
+    color: slategray;
+    letter-spacing: 1px;
 }
 /* HEADER  */
 #site-header {
@@ -116,11 +120,11 @@ main section{
     width: auto;
     height: 25px;
 }
-#skills-section{
+.resume-section{
     margin: auto;
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 80%;
     height: auto;
 }
 #skill-blobs{
@@ -168,4 +172,73 @@ main section{
 }
 .pastel-yellow{
     background-color: #fffed4;
+}
+
+/* CONTACT */
+#contact{
+    background:radial-gradient(at top right, purple,gray)
+}
+#contact-title h1{
+    color:white;
+}
+
+
+#contact-main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;    
+    color:white;
+    
+}
+.contact-box{
+    flex:1 1 0;
+}
+.contact-icon{
+    width: 1em;
+    height: auto;
+}
+
+#contact-details p, #contact-details h3{
+    color:white;
+}
+.contact-feild{
+    display: block;
+    margin: 15px 0px 15px 0px;
+    height: 1.6rem;
+    width: 80%;
+    border: none;
+    border-bottom: 2px solid gray;
+    background: None;
+    color:white;
+    outline: none;
+    transition: 0.4s ease-out;
+    font-size: 0.9em;
+    font-family: sans-serif;
+
+}
+
+.contact-feild:focus-within{
+    border:None;
+    border-bottom: 2px solid white;
+}
+
+#send-button{
+    width:auto;
+    padding: 10px;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    background: none;
+    border: 2px solid gray;
+    color:white;
+    transition: 0.2s;
+    
+}
+#send-button:hover{
+    background-color:gray;
+}
+
+#send-button:active{
+    background-color:darkgray;
+    border: 2px solid darkgray;
+    outline:none;
 }
